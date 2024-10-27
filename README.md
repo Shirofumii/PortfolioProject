@@ -21,3 +21,21 @@ Usage
     Upon loading, the portfolio will display a 3D scene with interactive elements.
     Scroll down to see animations and reveal additional content.
     Use the contact form to send messages.
+## To run this project locally, follow these steps:
+
+1. **Clone the repository**
+   ```
+   -git clone https://github.com/Shirofumii/PortfolioProject.git
+   ```
+2. Navigate to the project directory
+   ```
+   cd PortfolioProject
+   ```
+4. Install dependencies Make sure you have Node.js installed. Then run:
+   ```
+   npm install
+   ```
+6. Start the development server
+   ```
+   npm run dev
+   ```
