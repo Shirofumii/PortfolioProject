@@ -1,7 +1,7 @@
 Portfolio Project
 Overview
 
-This Portfolio Project showcases my skills and projects, particularly focusing on interactive 3D graphics and modern web technologies. The project is built using React, Three.js, and various libraries to create a visually engaging experience for users.
+This Portfolio Project showcases my skills and projects, particularly focusing on interactive 3D graphics and modern web technologies. The project is built using React, and various libraries to create a visually engaging experience for users.
 Features
 
     Interactive 3D Graphics: Utilizing Three.js for rendering 3D models and animations.
