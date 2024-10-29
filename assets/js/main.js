@@ -98,11 +98,9 @@
     });
   }
 
-// Mendapatkan semua section dan item navbar
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('#navmenu a');
 
-// Fungsi untuk mengubah item navbar aktif
 function changeActiveLink() {
     let scrollPosition = window.scrollY;
 
@@ -110,14 +108,11 @@ function changeActiveLink() {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        // Memeriksa apakah posisi scroll berada di dalam rentang section
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             const currentId = section.getAttribute('id');
 
-            // Menghapus kelas active dari semua link
             navLinks.forEach(link => {
                 link.classList.remove('active');
-                // Menambahkan kelas active pada link yang sesuai
                 if (link.getAttribute('href') === `#${currentId}`) {
                     link.classList.add('active');
                 }
@@ -126,27 +121,21 @@ function changeActiveLink() {
     });
 }
 
-// Menambahkan event listener untuk scroll
 document.addEventListener('scroll', changeActiveLink);
 
-// Menambahkan event listener untuk click pada navbar
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        // Menghapus kelas active dari semua link
         navLinks.forEach(link => link.classList.remove('active'));
-        // Menambahkan kelas active pada link yang diklik
         e.currentTarget.classList.add('active');
     });
 });
 
   document.addEventListener("DOMContentLoaded", function() {
-    const contactButton = document.querySelector('.btn-contact'); // Menemukan tombol
-    const contactSection = document.getElementById('contact'); // Menemukan section contact
-
+    const contactButton = document.querySelector('.btn-contact');
+    const contactSection = document.getElementById('contact'); 
     contactButton.addEventListener('click', function() {
-      // Menggulir ke section contact
       contactSection.scrollIntoView({ 
-        behavior: 'smooth' // Menambahkan efek smooth scroll
+        behavior: 'smooth'
       });
     });
   });
